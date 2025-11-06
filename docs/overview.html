@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Trader Repository Overview</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <h1>AI Trader Repository 안내</h1>
+      <p>
+        이 페이지는 비개발자 신입사원이 리포지토리의 목적과 구성 요소를 직관적으로 이해하도록 돕기 위해 제작되었습니다.
+        시각화된 카드와 다이어그램을 통해 각 파일과 예정된 모듈의 역할을 한눈에 확인할 수 있습니다.
+      </p>
+      <a class="cta" href="#architecture">구조 살펴보기</a>
+    </div>
+    <div class="hero__viz" aria-hidden="true">
+      <div class="node node--primary">AI Trader</div>
+      <div class="node node--secondary">프로젝트 목적</div>
+      <div class="node node--secondary">코드 구조</div>
+      <div class="node node--secondary">추가 계획</div>
+    </div>
+  </header>
+
+  <main>
+    <section id="purpose" class="section">
+      <h2>리포지토리 목적</h2>
+      <div class="card-grid" id="purpose-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="architecture" class="section">
+      <h2>전체 구조와 흐름</h2>
+      <p class="section__intro">
+        현재 리포지토리는 초기 세팅 단계로, 핵심 코드는 아직 추가되지 않았습니다. 다이어그램은 향후 구축할 기능 흐름을 보여 주며,
+        신입 구성원이 프로젝트의 큰 그림을 이해하도록 돕습니다.
+      </p>
+      <div class="flow" id="architecture-flow" aria-hidden="false"></div>
+    </section>
+
+    <section id="code" class="section">
+      <h2>파일별 기능 요약</h2>
+      <p class="section__intro">
+        아래 카드는 현재 리포지토리에 존재하는 파일과 앞으로 예정된 코드 모듈을 구분해 보여 줍니다.
+        각 카드를 클릭하면 주요 기능과 협업 시 유의할 점을 확인할 수 있습니다.
+      </p>
+      <div class="legend" role="list">
+        <span class="legend__item legend__item--current">현재 파일</span>
+        <span class="legend__item legend__item--planned">예정된 모듈</span>
+      </div>
+      <div class="card-grid" id="code-grid"></div>
+    </section>
+
+    <section id="onboarding" class="section section--accent">
+      <h2>신입 구성원을 위한 온보딩 체크리스트</h2>
+      <ol class="checklist" id="checklist"></ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>마지막 업데이트: <span id="last-updated"></span></p>
+    <p>문의: product@ai-trader.example</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
